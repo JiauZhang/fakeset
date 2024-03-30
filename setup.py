@@ -2,7 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'fakeset',
-    version = '0.0.1',
+    packages = find_packages(exclude=['examples']),
+    version = '0.0.2',
     license='MIT',
     description = 'Fake Dataset',
     author = 'JiauZhang',
@@ -16,6 +17,7 @@ setup(
         'Artificial Intelligence',
     ],
     install_requires=[
+        'numpy>=1.19.5',
     ],
     classifiers=[
         'Intended Audience :: Developers',
